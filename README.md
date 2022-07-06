@@ -11,6 +11,7 @@
     - Set Font to `JetBrains Mono NerdFont` `BOLD` at font size `15` (Settings->Profiles->Text)
     - Set `Report Terminal Type` to `xterm-256color` (Settings->Profiles->Terminal)
     - Load Color Preset `jVIM` (Settings->Profiles->Colors)
+- Launch vim and run `:PluginInstall`
 
 #### Keybindings ####
 _`leader` is `space`_
