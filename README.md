@@ -12,7 +12,40 @@
     - Set Font to `JetBrains Mono NerdFont` `BOLD` at font size `15` (Settings->Profiles->Text)
     - Set `Report Terminal Type` to `xterm-256color` (Settings->Profiles->Terminal)
     - Load Color Preset `jVIM` (Settings->Profiles->Colors)
-- Launch vim and run `:PluginInstall`
+- Launch vim
+    - Run `:PluginInstall`
+    - Install `coc.nvim` plugins:
+        - Bash: `CocInstall coc-sh`
+        - Java: `CocInstall coc-java`
+        - Go: `CocInstall coc-go`
+        - JSON: `CocInstall coc-json`
+        - JS/TS: `CocInstall coc-tsserver`
+        - Kotlin:
+            - Download `server.zip` from https://github.com/fwcd/kotlin-language-server/releases and unzip in `~/lsp/kotlin/server`
+            - Add the following to `CocConfig`:
+            ```
+            "languageserver": {
+              "kotlin": {
+                "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
+                "filetypes": ["kotlin"]
+              }
+            }
+            ```
+        - Groovy:
+            - Clone https://github.com/GroovyLanguageServer/groovy-language-server into `~/lsp/groovy`
+            - Build the server
+                - `cd ~/lsp/groovy/groovy-language-server`
+                - `./gradlew build`
+            - Add the following to `CocConfig`:
+            ```
+            "languageserver": {
+                "groovy": {
+                    "command": "java",
+                    "args" : ["-jar", "/path/to/groovy-language-server-all.jar"],
+                    "filetypes": ["groovy"]
+                  }
+            }
+            ```
 
 #### Keybindings ####
 _`leader` is `space`_
