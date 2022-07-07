@@ -4,6 +4,7 @@
 
 - Install macvim: `brew install macvim`
 - Install .vim_rc: Rename `vimrc` to `.vimrc` and move into home directory
+- Move `coc-settings.json` to `~/.vim`
 - Install vim_plug: `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 - Install JetBrains Mono from <https://www.nerdfonts.com/font-downloads>
 - `brew install vifm`
@@ -22,30 +23,11 @@
         - JS/TS: `CocInstall coc-tsserver`
         - Kotlin:
             - Download `server.zip` from https://github.com/fwcd/kotlin-language-server/releases and unzip in `~/lsp/kotlin/server`
-            - Add the following to `CocConfig`:
-            ```
-            "languageserver": {
-              "kotlin": {
-                "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
-                "filetypes": ["kotlin"]
-              }
-            }
-            ```
         - Groovy:
             - Clone https://github.com/GroovyLanguageServer/groovy-language-server into `~/lsp/groovy`
             - Build the server
                 - `cd ~/lsp/groovy/groovy-language-server`
                 - `./gradlew build`
-            - Add the following to `CocConfig`:
-            ```
-            "languageserver": {
-                "groovy": {
-                    "command": "java",
-                    "args" : ["-jar", "/path/to/groovy-language-server-all.jar"],
-                    "filetypes": ["groovy"]
-                  }
-            }
-            ```
 
 #### Keybindings ####
 _`leader` is `space`_
