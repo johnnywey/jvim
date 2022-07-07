@@ -2,6 +2,7 @@
 
 **Shamelessly copied from <https://github.com/wolandark/wim>**
 
+- Install nodejs and npm
 - Install macvim: `brew install macvim`
 - Install .vim_rc: Rename `vimrc` to `.vimrc` and move into home directory
 - Move `coc-settings.json` to `~/.vim`
@@ -21,6 +22,8 @@
         - Go: `CocInstall coc-go`
         - JSON: `CocInstall coc-json`
         - JS/TS: `CocInstall coc-tsserver`
+        - Python: `CocInstall coc-pyright`
+        - CSS: `CocInstall coc-css`
         - Kotlin:
             - Download `server.zip` from https://github.com/fwcd/kotlin-language-server/releases and unzip in `~/lsp/kotlin/server`
         - Groovy:
