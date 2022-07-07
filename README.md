@@ -2,6 +2,7 @@
 
 **Shamelessly copied from <https://github.com/wolandark/wim>**
 
+- Install macvim: `brew install macvim`
 - Install .vim_rc: Rename `vimrc` to `.vimrc` and move into home directory
 - Install vim_plug: `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 - Install JetBrains Mono from <https://www.nerdfonts.com/font-downloads>
