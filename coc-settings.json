@@ -1,0 +1,12 @@
+{"languageserver": {
+      "kotlin": {
+        "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
+        "filetypes": ["kotlin"]
+     },
+     "groovy": {
+        "command": "java",
+        "args" : ["-jar", "~/lsp/groovy/groovy-language-server/build/libs/groovy-language-server-all.jar"],
+        "filetypes": ["groovy"]
+     }
+    }
+}
