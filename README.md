@@ -17,13 +17,13 @@
 - Launch vim
     - Run `:PluginInstall`
     - Install `coc.nvim` plugins:
-        - Bash: `CocInstall coc-sh`
-        - Java: `CocInstall coc-java`
-        - Go: `CocInstall coc-go`
-        - JSON: `CocInstall coc-json`
-        - JS/TS: `CocInstall coc-tsserver`
-        - Python: `CocInstall coc-pyright`
-        - CSS: `CocInstall coc-css`
+        - Bash: `:CocInstall coc-sh`
+        - Java: `:CocInstall coc-java`
+        - Go: `:CocInstall coc-go`
+        - JSON: `:CocInstall coc-json`
+        - JS/TS: `:CocInstall coc-tsserver`
+        - Python: `:CocInstall coc-pyright`
+        - CSS: `:CocInstall coc-css`
         - Kotlin:
             - Download `server.zip` from https://github.com/fwcd/kotlin-language-server/releases and unzip in `~/lsp/kotlin/server`
         - Groovy:
