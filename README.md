@@ -15,7 +15,7 @@
     - Set `Report Terminal Type` to `xterm-256color` (Settings->Profiles->Terminal)
     - Load Color Preset `jVIM` (Settings->Profiles->Colors)
 - Launch vim
-    - Run `:PluginInstall`
+    - Run `:PlugInstall`
     - Install `coc.nvim` plugins:
         - Bash: `:CocInstall coc-sh`
         - Java: `:CocInstall coc-java`
