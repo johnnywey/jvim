@@ -71,5 +71,6 @@ _`leader` is `space`_
 | END              | Trigger Snippets       |
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
+|Ctrl space        | Autocomplete suggestions in COC  |
 |V mode c-p | Copies To Shared Clipboard |
 |V mode c-v | Pastes From Shared Clipboard | 
